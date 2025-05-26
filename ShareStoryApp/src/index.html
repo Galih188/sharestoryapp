@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta http-equiv="Content-Type" content="text/html;charset=UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <!-- Link -->
+    <link rel="shortcut icon" href="favicon.png" />
+    <link rel="apple-touch-icon" href="favicon.png" />
+    <link rel="manifest" href="app.webmanifest" />
+
+    <!-- Google Fonts -->
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter&display=swap"
+      rel="stylesheet"
+    />
+
+    <title>App</title>
+  </head>
+  <body>
+    <a href="#main-content" class="skip-link">Lewati ke Konten</a>
+
+    <header>
+      <div class="main-header container">
+        <a class="brand-name" href="#/">App</a>
+
+        <nav id="navigation-drawer" class="navigation-drawer">
+          <ul id="nav-list" class="nav-list">
+            <li><a href="#/">Beranda</a></li>
+            <li><a href="#/about">About</a></li>
+            <li><a href="#/bookmarks">Bookmark</a></li>
+            <li><a href="#/add">Tambah Cerita</a></li>
+            <li><a href="#/login">Login</a></li>
+            <li><a href="#/register">Register</a></li>
+          </ul>
+        </nav>
+
+        <button id="drawer-button" class="drawer-button">☰</button>
+      </div>
+    </header>
+
+    <main id="main-content" class="main-content"></main>
+
+    <footer>
+      <p>Belajar Pengembangan Web Intermediate &#169; 2025, Dicoding Academy</p>
+    </footer>
+
+    <script>
+      if ("serviceWorker" in navigator) {
+        window.addEventListener("load", () => {
+          navigator.serviceWorker
+            .register("/sw.bundle.js")
+            .then((registration) =>
+              console.log("Service Worker terdaftar:", registration.scope)
+            )
+            .catch((error) => console.error("SW registrasi gagal:", error));
+        });
+      }
+    </script>
+
+    <div
+      id="notification"
+      class="notification info"
+      style="
+        position: fixed;
+        bottom: 16px;
+        left: 50%;
+        transform: translateX(-50%);
+        background-color: #323232;
+        color: white;
+        padding: 12px 24px;
+        border-radius: 4px;
+        display: none;
+        z-index: 9999;
+        font-size: 14px;
+      "
+    ></div>
+  </body>
+</html>

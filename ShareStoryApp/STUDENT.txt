@@ -1,0 +1,2 @@
+APP_URL= https://sharestoryapp-5a068.web.app
+MAP_SERVICE_API_KEY=<api_key>

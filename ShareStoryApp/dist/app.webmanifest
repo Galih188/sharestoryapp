@@ -1,0 +1,49 @@
+{
+  "id": "/#/",
+  "start_url": "/#/",
+  "scope": "/",
+  "name": "ShareStory App",
+  "short_name": "ShareStory",
+  "description": "ShareStory App adalah aplikasi web inovatif yang memungkinkan pengguna untuk berbagi cerita dan pengalaman mereka dengan komunitas. ShareStory App menggabungkan elemen sosial dan personal storytelling dalam antarmuka yang intuitif, menciptakan platform yang menghubungkan orang melalui kisah-kisah autentik dari berbagai tempat dan perspektif.",
+  "display": "standalone",
+  "background_color": "#FFFFFF",
+  "theme_color": "#87cefa",
+  "icons": [
+    {
+      "src": "images/icons/icon-x144.png",
+      "type": "image/png",
+      "sizes": "144x144",
+      "purpose": "any"
+    },
+    {
+      "src": "images/icons/maskable-icon-x48.png",
+      "type": "image/png",
+      "sizes": "48x48",
+      "purpose": "maskable"
+    },
+    {
+      "src": "images/icons/maskable-icon-x96.png",
+      "type": "image/png",
+      "sizes": "96x96",
+      "purpose": "maskable"
+    },
+    {
+      "src": "images/icons/maskable-icon-x192.png",
+      "type": "image/png",
+      "sizes": "192x192",
+      "purpose": "maskable"
+    },
+    {
+      "src": "images/icons/maskable-icon-x384.png",
+      "type": "image/png",
+      "sizes": "384x384",
+      "purpose": "maskable"
+    },
+    {
+      "src": "images/icons/maskable-icon-x512.png",
+      "type": "image/png",
+      "sizes": "512x512",
+      "purpose": "maskable"
+    }
+  ]
+}
